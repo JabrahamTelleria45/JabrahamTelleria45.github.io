@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Estructuras de Control: Condicional "Si"</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Clase1.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introV1">Estructuras de Control: Condicional "Si"</h1> 
+                <p>En esta clase, aprenderás a utilizar la estructura condicional "Si" en Flowgorithm para tomar decisiones en tus algoritmos.</p> 
+                <img class="imgCl" src="/assets/img/OsoCondicional.png" alt="">
+            </div>
+            <img class="imgIndex" src="/assets/img/PortadaCondicional.png" alt="Algoritmo">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside active" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderV">Condicional "Si"</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejemplos</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejercicios</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Documentación</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Condicional "Si"</h2>
+                    <p>El condicional "Si" permite ejecutar un bloque de código solo si una condición específica es verdadera. En Flowgorithm, esta estructura se representa mediante un rombo, que evalúa la condición y decide el flujo del algoritmo.</p>
+                    <ul>
+                        <li><strong>Condición Verdadera:</strong> Si la condición se cumple (es verdadera), se ejecuta el bloque de código dentro del "Si".</li>
+                        <li><strong>Condición Falsa:</strong> Si la condición no se cumple (es falsa), se puede ejecutar un bloque de código alternativo usando "Sino".</li>
+                    </ul>
+
+                    <h3>Ejemplo de Condicional "Si"</h3>
+                    <p>Supongamos que tienes una variable, <code>edad</code>, y quieres comprobar si es mayor o igual a 18 para determinar si la persona es mayor de edad:</p>
+                    <pre><code>
+edad = 20
+                    </code></pre>
+                    <p>El condicional "Si" en Flowgorithm podría ser:</p>
+                    <ul>
+                        <li><code>Si (edad &gt;= 18) entonces</code>: La persona es mayor de edad.</li>
+                        <li><code>Sino</code>: La persona es menor de edad.</li>
+                    </ul>
+
+                    <h3>Pasos para usar el condicional "Si" en Flowgorithm</h3>
+                    <ol>
+                        <li><strong>Declarar la Variable:</strong>
+                            <ul>
+                                <li>En la sección de Variables, crea una variable, <code>edad</code>.</li>
+                                <li>Selecciona el tipo <code>Integer</code> (entero) para esta variable.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Asignar un Valor a la Variable:</strong>
+                            <ul>
+                                <li>Usa una Sentencia de Asignación para establecer el valor de la variable. Por ejemplo, asigna 20 a <code>edad</code>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Agregar el Condicional "Si":</strong>
+                            <ul>
+                                <li>Usa el símbolo de rombo para agregar un condicional "Si" en Flowgorithm.</li>
+                                <li>Especifica la condición, por ejemplo, <code>edad &gt;= 18</code>.</li>
+                                <li>Agrega los bloques de código dentro de las ramas "Si" y "Sino".</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <img class="img-fluid" src="/assets/img/ejemploEjercicioCondicion.png" alt="Ejemplo de condicional Si en Flowgorithm">
+                    <p>De tarea, puedes probar con diferentes valores y condiciones para ver cómo cambia el flujo del algoritmo.</p>
+                    <ol>
+                        <p>Te daré los pasos de como resolver el primero, los demás encuentra tu el método.</p>
+                        <li>Verificar si un numero es mayor o Menor</li>
+                        <ul>
+                            <li>Crear una variable de tipo entero llamada = num.</li>
+                            <li>Pide al usuario que ingrese el número a través de una entrada (Recuerda asignar a que variable es en este caso a num).</li>
+                            <li>Use una condición si para verificar si el número es mayor o menor a cero.</li>
+                            <li>Muestra un mensaje si el número es positivo o negativo.</li><br>
+                        </ul>
+                        <li>Verificar si un número es par o inpar.</li>
+                        <li>Comparar 2 números.</li>
+                        <li>Verificar si una persona puede votar.</li>
+                        <li>Identificar al mayor de 3 números.</li>
+                    </ol>
+                    <ol>
+                        
+
+                    <p>También te dejaré la documentación de Flowgorithm donde podrás ver todos los detalles sobre los condicionales:</p>
+                    <a class="boton2" href="http://www.flowgorithm.org/documentation/language/if.html" target="_blank">Documentación</a> <br>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <a href="/assets/views/OperadoresLogicos.html" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left"></i> Clase Anterior
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assets/views/BucleWhile.html" class="btn btn-outline-secondary">
+                    Siguiente Clase <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+            </div>
+            <div>
+                <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

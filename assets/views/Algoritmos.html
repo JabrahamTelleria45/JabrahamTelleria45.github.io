@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Algoritmos</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Algoritmos.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introFl">Algoritmos ¿Qué es un Algoritmo?</h1> 
+                <p>Aprende primero sobre qué es Flowgorithm para luego empezar a ver los conceptos básicos de la lógica</p> 
+                
+            </div>
+            <img class="imgIndex" src="/assets/img/ClaseAlgoritmos.jpg" alt="Algoritmo">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside active" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderA">Algoritmo(Ejemplo y Pasos)</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderA">Resolver Algoritmo en flowgorithm</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderA">Utilizar y asignar variables</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderA">Utilizar condicional</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="intro-header">
+                    <h1>¿Qué es un algoritmo?</h1>
+                    <p>Sencillamente, un algoritmo es un conjunto de pasos para resolver un problema. Cuando hablamos de problemas, no nos referimos solo a problemas matemáticos, sino a problemas en general.</p>
+                </div>
+                <div>
+                    <h2>Ejemplo</h2>
+                    <p>Una persona llamada Ana quiere sacar su licencia de conducir, pero la edad mínima para sacarla es ser mayor de 18 años y la fecha de nacimiento de Ana es el año 2004. Nosotros calcularemos la edad de Ana y sabremos si puede sacar su licencia.</p>
+                    <p>Antes de empezar a crear un algoritmo, es muy importante saber los datos, así que primeramente obtendremos los datos del problema:</p>
+                    <ul>
+                        <li>Fecha de nacimiento de Ana: 2004.</li>
+                        <li>Edad mínima para tener licencia de conducir en Nicaragua: 18.</li>
+                        <li>Año actual en el que estamos.</li>
+                    </ul>
+                    <p>Una vez teniendo los datos, ya podemos empezar a crear el algoritmo o nuestra serie de pasos.</p>
+                    
+                    <h3>Pasos</h3>
+                    <ul>
+                        <li>Tomar la fecha de nacimiento de Ana: 2004</li>
+                        <li>Tomar el año actual: 2024</li>
+                        <li>Calcular la edad de Ana: Año actual - Fecha de nacimiento de Ana (2024 - 2004 = 20)</li>
+                        <li>Si Ana es mayor o tiene 18 años, puede sacar su licencia. Si no, no puede.</li>
+                    </ul>
+
+                    <h3>Creando el algoritmo en Flowgorithm</h3>
+                    <p>A continuación, ejecutaremos este algoritmo en Flowgorithm.</p>
+                    <p>Así se ve la interfaz de Flowgorithm al abrirlo:</p>
+                    <img src="/assets/img/AlgoritmoImg1.png" alt="Interfaz de Flowgorithm" class="img-fluid">
+                    <p>Podemos ver que entre "Principal" y "Fin" tenemos una flechita. Ahí daremos click para acceder a todas nuestras sentencias.</p>
+                    <img src="/assets/img/ejemploAlgo2.jpg" alt="Sentencias de Flowgorithm" class="img-fluid">
+                    <p>Vamos a iniciar haciendo una declaración llamada “nacimientoAna”.</p>
+                    <img src="/assets/img/AlgoritmoImg2.jpg" alt="Declaración Forma" class="img-fluid">
+                    <p>Es muy importante, como fundamento básico de programación, que al declarar una variable esta empiece en minúscula y, si tiene más de una palabra, las siguientes se escriban en mayúscula. Este método se llama CamelCase. Por ejemplo, la forma incorrecta sería nombrarla “Variable de Ejemplo”, y la forma correcta sería “variableDeEjemplo”.</p>
+                    <p>Al estar declarando una fecha de nacimiento, nuestro tipo de dato tiene que ser un entero. Ya veremos más adelante más a detalle los tipos de variables para que te familiarices mejor.</p>
+                    <p>Una vez declarada nuestra variable, tenemos que asignar un valor. Esto lo hacemos nuevamente dando click en la flecha que está debajo de nuestra variable declarada y luego dando click en "Asignación".</p>
+                    <img src="/assets/img/AlgoritmoImg3.jpg" alt="Agregar sentencia Flowgorithm" class="img-fluid">
+                    <p>Para asignar un valor a nuestra variable, primeramente nombramos la variable (en este caso, “nacimientoAna”) porque es a la variable a la que le daremos el valor y en "Expresión" ponemos el valor (su nacimiento).</p>
+                    <img src="/assets/img/AlgoritmoImg4.jpg" alt="Asignación en Flowgorithm" class="img-fluid">
+                    <p>De la misma forma, vamos a declarar una variable para el año actual y le asignaremos el valor, siguiendo los mismos pasos. También una variable para la edad mínima para tener licencia de conducir.</p>
+                    <p>Declaradas todas nuestras variables, nuestro diagrama de flujo debería verse así:</p>
+                    <img src="/assets/img/AlgoritmoImg5.jpg" alt="Cálculo de edad en Flowgorithm" class="img-fluid">
+                    <p>Para resolver el problema, tenemos que recordar nuestro algoritmo: restar el año actual menos el nacimiento de Ana para poder calcular su edad y saber si puede sacar su licencia de conducir. Para eso, vamos a declarar una variable llamada “edadAna”. Calculamos restando la variable añoActual con valor 2024 y nacimientoAna con valor 2004.</p>
+                    <img src="/assets/img/AlgoritmoImg6.jpg" alt="Disposición de ventanas en Flowgorithm" class="img-fluid">
+                    <p>Para poder visualizar mejor el valor de tus variables y la respuesta que te dará el programa al ejecutar tus algoritmos, haz lo siguiente:</p>
+                    <p>Click en el icono "Disposición de ventanas":</p>
+                    <img src="/assets/img/AlgoritmoImg7.jpg" alt="Variables y consola en Flowgorithm" class="img-fluid">
+                    <p>Seleccionamos "Variables" y "Consola":</p>
+                    <img src="/assets/img/AlgoritmoImg8.jpg" alt="Ejecución en Flowgorithm" class="img-fluid">
+                    <p>De esta forma, podrás ver tus variables y la respuesta del programa. Así se vería al ejecutarlo por el momento (solo nos muestra las variables porque no tenemos ninguna salida):</p>
+                    <img src="/assets/img/AlgoritmoImg9.jpg" alt="Ejecución en Flowgorithm" class="img-fluid">
+                    <p>Para ir terminando nuestro algoritmo, vamos a agregar una condición. Una condición es una estructura de control que permite tomar decisiones dentro de un programa. Los condicionales evalúan una expresión lógica (una condición) y ejecutan bloques de código diferentes dependiendo de si la condición es verdadera o falsa, intentemoslo:</p>
+                    <p>Haremos click siempre en la última flechita de abajo para agregar un nuevo elemento, en este caso será la estructura de control "SI que está en forma de rombo".</p>
+                    <img src="/assets/img/AlgoritmoImg10.png" alt="Condicional 'Si' en Flowgorithm" class="img-fluid">
+                    <p>Una vez teniendo agregada nuestra condicional IF o "Si" en nuesto diagrama de flujo, haremos doble click sobre el para agregarle una expresión en este caso como es condicional.</p>
+                    <p>En esto debemos tener imaginación ya que es como la vida real asi que nuestro expresion seria si Ana es mayor, en nuestro caso seria edadAna a la edad minima para tener licencia de conducir en este caso nuestra variable edadLicenciaConducir.</p>
+                    <p>Le diremos al programa que nos muestre un mensaje que diga: Ana puede sacar su licencia de conducir, de lo contrario que el mensaje diga: Ana no puede sacar su licencia de conducir por que es  menor.</p>
+                    <p>expresado en nuestro diagrama seria asi: edadAna >= edadLicenciaConducir, esto (>=) significa mayor o igual y se llama operador logico, lo veremos a detallle mas adelante.</p>
+                    <img src="/assets/img/AlgoritmoImg11.png" alt="expresión de la condicional en Flowgorithm" class="img-fluid">
+                    <p>Teniendo nuestro archivo condicional, podemos ver dos flechas, dos caminos, el de la derecha nos muestra si la condición es verdadera y el de la izquierda si la condición es falsa</p>
+                    <img src="/assets/img/AlgoritmoImg12.png" alt="Ejecución en Flowgorithm" class="img-fluid">
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <a href="/assets/views/Clase1.html" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left"></i> Clase Anterior
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assets/views/Variables.html" class="btn btn-outline-secondary">
+                    Siguiente Clase <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+            </div>
+            <div>
+                <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

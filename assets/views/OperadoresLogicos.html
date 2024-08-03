@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Operadores Lógicos</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Clase1.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introV1">Operadores Lógicos</h1> 
+                <p>En esta clase, aprenderás a utilizar operadores lógicos y aritméticos en tus algoritmos.</p> 
+                <img class="imgCl" src="/assets/img/OsoOperadores.png" alt="">
+            </div>
+            <img class="imgIndex" src="/assets/img/FoxImage.png" alt="Algoritmo">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside active" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderV">Operadores Lógicos</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejemplos</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Documentación</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Operadores Lógicos</h2>
+                    <p>Los operadores lógicos se utilizan para realizar comparaciones y tomar decisiones en base a condiciones. En Flowgorithm, como en otros lenguajes de programación, los principales operadores lógicos son:</p>
+                    <ul>
+                        <li><code>AND</code> aunque en Flowgorithm se escribe asi <code>&</code> o <code>&&</code>: Devuelve verdadero si ambas condiciones son verdaderas.</li>
+                        <p>También pueden utilizarse para concatenar una expresion, luego veremos como concatenamos aunque ya lo hemos usado, ahorita aprenderemos como hacerlo.</p>
+                        <li><code>OR</code> en flowgorithm se escribe asi <code>||</code>: Devuelve verdadero si al menos una de las condiciones es verdadera.</li>
+                        <li><code>NOT</code> el NOT se escribe asi <code>!</code>: Invierte el valor lógico de una condición.</li>
+                    </ul>
+
+                    <h3>Ejemplos de Operadores Lógicos</h3>
+                    <p>Supongamos que tienes dos variables, <code>a</code> y <code>b</code>:</p>
+                    <pre><code>
+a = 5
+b = 10
+                    </code></pre>
+                    <p>Algunas expresiones lógicas podrían ser:</p>
+                    <ul>
+                        <li><code>a &lt; b && a &gt; 0</code>: Esta expresión es verdadera porque ambas condiciones son verdaderas.</li>
+                        <li><code>a &gt; b || b &lt; 15</code>: Esta expresión es verdadera porque una de las condiciones es verdadera.</li>
+                        <li><code> (a !&gt; b)</code>: Esta expresión es verdadera porque <code>a</code> no es mayor que <code>b</code>, por lo tanto, <code>NOT (a &gt; b)</code> es verdadero.</li>
+                    </ul>
+
+                    <h3>En Flowgorithm, para usar operadores lógicos, seguirías estos pasos:</h3>
+                    <ol>
+                        <li><strong>Declarar las Variables:</strong>
+                            <ul>
+                                <li>En la sección de Variables, crea dos variables, <code>a</code> y <code>b</code>.</li>
+                                <li>Selecciona el tipo <code>Integer</code> (entero) para estas variables.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Asignar Valores a las Variables:</strong>
+                            <ul>
+                                <li>Usa una Sentencia de Asignación para establecer los valores de las variables. Por ejemplo, asigna 5 a <code>a</code> y 10 a <code>b</code>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Usar los Operadores Lógicos:</strong>
+                            <ul>
+                                <li>Ahora utiliza una salida en donde en la expresión pondrás a > b, entonces la máquina te retornará un valor dependiendo si es cierto o es falso, en este caso (False).</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <img class="img-fluid" src="/assets/img/ejemploOperador.png" alt="Ejemplo de operadores lógicos en Flowgorithm">
+                    <p>De tarea puedes probar los demá operadores para que te familiarices con ellos, te dejaré un cuadro para que le eches un vistazo cómo escribirlo y cómo funcionan.</p>
+                    <img class="img-fluid" src="/assets/img/cuadroOperadores.png" alt="Cuadro de operadores">
+
+                    <p>También te dejaré la documentación de Flowgorithm donde podrás ver todos los operadores, conceptos y como funcionan</p>
+                    <a class="boton2" href="http://www.flowgorithm.org/documentation/language/operators.html" target="_blank">Documentación</a> <br>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+
+<div class="container text-center my-4">
+    <div class="row">
+        <div class="col">
+            <a href="/assets/views/EjercicioAlgoritmo.html" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left"></i> Clase Anterior
+            </a>
+        </div>
+        <div class="col">
+            <a href="/assets/views/CondicionalSi.html" class="btn btn-outline-secondary">
+                Siguiente Clase <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-4">
+<div class="container text-center">
+<div class="mb-3">
+    <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+</div>
+<div>
+    <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/assets/js/javascript.js"></script>
+</body>
+</html>

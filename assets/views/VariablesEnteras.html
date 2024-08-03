@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Variables Enteras</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Clase1.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introV1">Variables Enteras</h1> 
+                <p>Te enseñaré las variables por parte y tipo para que comprendas mejor.</p> 
+                <img class="imgCl" src="/assets/img/OsoVariable.png" alt="">
+            </div>
+            <img class="imgIndex" src="/assets/img/VariablesHeader.png" alt="Algoritmo">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside active" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderV">Variables Tipo Entero</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">SobreCarga de variables</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Operaciones dentro de Variables enteras</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Concepto de Variables Enteras</h2>
+                    <p>Recuerdas que decíamos sobre las variables en nuestra clase anterior? Que en programación, una variable es un espacio en memoria que se utiliza para almacenar un dato que puede tanto cambiar o permanecer durante la ejecución del programa. En Flowgorithm o cualquier otro lenguaje, las variables enteras se usan para almacenar números enteros (sin decimales).</p>
+                    <h3>Ejemplo de Variable Entera:</h3>
+                    <ul>
+                        <li>fechaNacimiento = 15</li>
+                        <li>notaAlumno = 86</li>
+                    </ul>
+                    <p><strong>Nota:</strong> Si intentas escribir una variable entera de esta forma <code>notaAlumno = "86"</code>, tendrás un error ya que entre comillas solo se ponen las variables de tipo string que veremos en siguientes capítulos.</p>
+                    <img class="img-fluid" src="/assets/img/VariableEnt1.png" alt="Ejemplo de variable Entera">
+                    <p>Como podemos ver nos marca un error al ser una variable entera no debe ser escrita ente comillas "" siempre recuerdalo.</p>
+                    <p>En estas variables también puedes almacenar sumas ya que siempre serán de tipo entero. Supongamos que quieres almacenar el resultado de una suma. Puedes declarar una variable y asignarle el valor de la suma de dos números:</p>
+                    <pre><code>suma = 5 + 2</code></pre>
+                    <img class="img-fluid" src="/assets/img/VariableEnt2.png" alt="Ejemplo Variable Entera">
+
+                    <h3>En Flowgorithm, para hacer esto, seguirías estos pasos:</h3>
+                    <ol>
+                        <li><strong>Declarar la Variable:</strong>
+                            <ul>
+                                <li>En la sección de Variables, crea una nueva variable. Por ejemplo, <code>suma</code>.</li>
+                                <li>Selecciona el tipo <code>Integer</code> (entero) para esta variable.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Asignar un Valor a la Variable:</strong>
+                            <ul>
+                                <li>Usa una Sentencia de Asignación para establecer el valor de la variable. En este caso, asigna 7 a <code>suma</code> usando la expresión <code>5 + 2</code>.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <h3>Sobrecarga de Variables</h3>
+                    <p>En Flowgorithm, puedes cambiar el valor de una variable en cualquier momento. Si tienes una variable <code>edadAna</code> y quieres actualizar su valor, simplemente puedes usar una sentencia de asignación para hacerlo.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>edadAna = 23</code></pre>
+                    <p>Después, si necesitas actualizar el valor de <code>edadAna</code> a 25, puedes hacer:</p>
+                    <pre><code>edadAna = 25</code></pre>
+                    <video class="img-fluid" src="/assets/videos/VideoSobrecarga.mp4" controls></video>
+                    <p>Recuerda que al declarar una variable, puedes cambiar su valor en cualquier momento ya sea creando durante la ejecución del algoritmo.</p>
+                    <h3>Escribir Variables en camelCase</h3>
+                    <p>Siempre recuerda que es una buena práctica usar el estilo <strong>camelCase</strong> para nombrar tus variables. Esto significa que la primera palabra comienza en minúscula y cada palabra subsiguiente comienza con una letra mayúscula, te dejo los ejemplos nuevamente.</p>
+                    <h4>Ejemplos de Nombres de Variables en camelCase:</h4>
+                    <ul>
+                        <li>edadAna</li>
+                        <li>numeroDeEstudiantes</li>
+                        <li>sumaTotal</li>
+                    </ul>
+                </div>
+
+                <div class="container text-center my-4">
+                    <div class="row">
+                        <div class="col">
+                            <a href="/assets/views/Variables.html" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left"></i> Clase Anterior
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="/assets/views/VariablesReales.html" class="btn btn-outline-secondary">
+                                Siguiente Clase <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+            </div>
+            <div>
+                <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

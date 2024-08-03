@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Variables</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Clase1.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introV1">Variables</h1> 
+                <p>En esta clase aprenderas todo sobre las variables, tipos de datos entre otros, cabe destacer que estas no son todas las varibles que existen en programación, pero son de las más fundamentales</p> 
+                <img class="imgCl" src="/assets/img/OsoVariable.png" alt="">
+            </div>
+            <img class="imgIndex" src="/assets/img/VariablesHeader.png" alt="">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside active" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderV">Variables(Formas de escribir y Tipos)</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Declarar y asignar Variables</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Variables combinadas</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejercicio Práctico</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="intro-header">
+                    <h1>Variables en Programación</h1>
+                    <p>En programación, una variable es un espacio de almacenamiento con un nombre asociado que puede contener un valor. Las variables permiten a los programas almacenar y manipular datos de manera eficiente. El nombre de la variable se utiliza para referirse al valor almacenado en ese espacio de almacenamiento.</p>
+                    <ul>
+                        <li>edadUsuario</li>
+                        <li>nombreCompleto</li>
+                        <li>marcaAuto</li>
+                    </ul>
+                    <p>Estas convenciones ayudan a distinguir rápidamente los nombres de variables y a entender su propósito dentro del código.</p>
+                </div>
+                <div>
+                    <h2>Tipos de Variables en Flowgorithm</h2>
+                    <p>Flowgorithm es una herramienta educativa diseñada para enseñar los conceptos básicos de la programación a través de diagramas de flujo. Flowgorithm admite varios tipos de variables básicos que se utilizan comúnmente en la programación. Aquí están los principales tipos de variables que puedes utilizar en Flowgorithm:</p>
+                    <ul>
+                        <li><strong>Integer (Entero):</strong> Almacena números enteros, es decir, sin decimales. Ejemplo: <code>int edad = 20</code></li>
+                        <li><strong>Real (Real):</strong> Almacena números con decimales. Ejemplo: <code>real altura = 1.75</code></li>
+                        <li><strong>Array (Arreglo):</strong> Almacena múltiples valores del mismo tipo en una estructura indexada. Ejemplo: <code>int[] numeros = {1, 2, 3, 4, 5}</code></li>
+                        <li><strong>Boolean (Booleano):</strong> Almacena valores de verdadero o falso. Ejemplo: <code>boolean esMayorDeEdad = true</code></li>
+                        <li><strong>String (Cadena de caracteres):</strong> Almacena secuencias de caracteres, como palabras o frases. Ejemplo: <code>string nombre = "Ana"</code></li>
+                    </ul>
+
+                    <h2>Declaración y Asignación de Variables en Flowgorithm</h2>
+                    <p><strong>Declaración:</strong> Es el proceso de crear una variable y definir su tipo de dato. Ejemplo en Flowgorithm: <code>int edad</code></p>
+                    <p><strong>Asignación:</strong> Es el proceso de dar un valor a una variable. Ejemplo en Flowgorithm: <code>edad = 20</code></p>
+
+                    <h2>Variables Combinadas</h2>
+                    <p>En programación, a veces es necesario realizar operaciones con variables de diferentes tipos. A esto se le llama "variables combinadas". Flowgorithm permite ciertas operaciones entre variables de tipos diferentes, siempre que las operaciones sean lógicas y compatibles.</p>
+                    <p>Ejemplo de combinación de variables:</p>
+                    <p>Supongamos que queremos calcular si una persona es mayor de edad. Para ello, necesitamos combinar variables de tipo entero y booleano.</p>
+                    <pre><code>
+int edad = 20
+int edadMinima = 18
+boolean esMayorDeEdad = edad >= edadMinima
+                    </code></pre>
+                    <p>En este ejemplo, <code>edad</code> y <code>edadMinima</code> son variables enteras, y la expresión <code>edad >= edadMinima</code> es una comparación que devuelve un valor booleano (<code>true</code> o <code>false</code>), que se almacena en <code>esMayorDeEdad</code>.</p>
+
+                    <h2>Ejercicio Práctico</h2>
+                    <p>Vamos a realizar un ejercicio simple para reforzar el concepto de variables.</p>
+                    <h3>Ejercicio: Cálculo de Área de un Rectángulo</h3>
+                    <p>En este ejercicio, calcularemos el área de un rectángulo. Para ello, seguiremos los siguientes pasos:</p>
+                    <ul>
+                        <li>Declara dos variables enteras: <code>ancho</code> y <code>alto</code>.</li>
+                        <li>Asigna los valores 5 y 10 a las variables <code>ancho</code> y <code>alto</code>, respectivamente.</li>
+                        <li>Declara una tercera variable entera llamada <code>area</code>.</li>
+                        <li>Calcula el área multiplicando <code>ancho</code> por <code>alto</code> y asigna el resultado a la variable <code>area</code>.</li>
+                        <li>Muestra el resultado del área en la consola.</li>
+                    </ul>
+                    <p>Diagrama de flujo en Flowgorithm:</p>
+                    <ol>
+                        <li>Declara las variables: <code>ancho</code>, <code>alto</code> y <code>area</code>.</li>
+                        <li>Asigna los valores: <code>ancho = 5</code> y <code>alto = 10</code>.</li>
+                        <li>Calcula el área: <code>area = ancho * alto</code>.</li>
+                        <li>Muestra el resultado del área.</li>
+                    </ol>
+                    <div class="button-container">
+                        <button class="btn btn-primary" onclick="revealImage()">Ver Respuesta</button>
+                    </div>
+                    <img id="exerciseImage" src="/assets/img/VariablesImgEjercicio.png" alt="Ejercicio en Flowgorithm" class="img-fluid blurred">
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <a href="/assets/views/Algoritmos.html" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left"></i> Clase Anterior
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assets/views/VariablesEnteras.html" class="btn btn-outline-secondary">
+                    Siguiente Clase <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="descarga">
+    <h4>Por acá te dejo un enlace para que accedas a la documentación de Flowgorithm y explores sobre los tipos de variables, operadores, etc.</h4>
+    <a class="boton2" href="http://www.flowgorithm.org/documentation/index.html" target="_blank">Documentación</a>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+            </div>
+            <div>
+                <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function revealImage() {
+            var image = document.getElementById("exerciseImage");
+            image.classList.remove("blurred");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

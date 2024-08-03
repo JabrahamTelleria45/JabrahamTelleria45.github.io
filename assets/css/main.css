@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.contenedor{
+    width: 100%;
+    height: 50%;
+    max-width: 1200px;
+    display: flex;
+    margin:auto;
+    overflow: hidden;
+    
+
+}
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+}
+.logo{
+    height: 100px;
+}
+.logo img{
+    display: block;
+    height: 100%;
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    
+    text-decoration: none;
+    padding-left: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    
+}
+.enlaces a:hover {
+    color: rebeccapurple;
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.7), rgba(0, 255, 0, 0.7), rgba(0, 0, 255, 0.7));
+    background-image: none;
+    font-weight: bold;
+}
+.boton.activo{
+    
+    color: rgb(21, 248, 70); /* Color predeterminado */
+    font-weight: bold;
+}
+.boton.clase{
+    color: #495fca;
+    font-weight: bold;
+}
+.boton.ejercicio{
+    color:rgb(255, 251, 0);
+    font-weight: bold;
+}
+.boton{
+    color: rgb(62, 60, 60);
+}
+.boton.contacto{
+    color: red;
+    font-weight: bold;
+}
+
+
+.menu-burg {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+.hamburger-icon {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger-icon::before {
+    top: -8px;
+}
+
+.hamburger-icon::after {
+    top: 8px;
+}
+
+@media (max-width: 600px) {
+    .enlaces {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .enlaces.active {
+        display: flex;
+    }
+
+    .menu-burg {
+        display: block;
+    }
+}
+.sidebar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+ .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(244, 244, 244);
+    
+
+ }
+ .contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ }
+  .intro>.imgIndex {
+        width: 45%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+ .pHeaderA{
+    color: rgb(237, 139, 12);
+    font-weight: bold;
+ }
+ .pHeader{
+    color: rgb(155, 3, 250);
+    font-weight: bold;
+ }
+ .pHeaderV{
+    color: rgb(109, 163, 233);
+    font-weight: bold;
+ }
+ .pHeaderC{
+    color: rgb(53, 224, 96);
+    font-weight: bold;
+ }
+ .imgHeader{
+    display: flex;
+    height: 45%;
+    margin: 5px;
+
+ }
+ .intro h1{
+    
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+ }
+ .introC1{
+    color: rgb(47, 255, 50);
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .introFl{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(228, 142, 13);
+ }
+ .introV1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(13, 178, 228);
+ }
+ 
+ .intro p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+ }
+.header-ejemplo{
+    display: flex;
+
+}
+ .boton2{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: rgb(31, 186, 31);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.botonCl{
+    width: 120px;
+    background-color: rgb(31, 121, 186);
+    color: white;
+    padding: 15px ;
+    border-radius: 10px;
+}
+.botonContacto{
+    width: 120px;
+    background-color: rgb(208, 19, 19);
+    color: white;
+    padding: 15px ;
+    border-radius: 10px;
+}
+.imgCl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin: 8px;
+}
+.contenedor-cuerpo{
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-desenlace{
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descarga{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.imgEjemplo{
+    height: 500px;
+}
+.downloadA{
+    text-decoration: none;
+    color: white;
+}
+.img-fluid{
+    width: 80%;
+    max-width: 1200px;
+
+}
+.img-fluidF{
+    height: 200px;
+}
+.blurred {
+    filter: blur(10px);
+}
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-header {
+    background-image: url('/assets/img/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact-header h1 {
+    font-size: 3rem;
+}
+.contact-info {
+    margin-top: 30px;
+}
+.contact-info i {
+    font-size: 1.5rem;
+    color: #495fca;
+    margin-right: 10px;
+}
+.list-aside{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(241, 3, 3);
+}
+.list-aside.active{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(36, 190, 36);
+}
+.list-aside.bucle{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(217, 224, 15);
+}
+.list-aside.matriz{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 21, 232);
+}
+
+.sidebar {
+    overflow-y: auto; 
+    max-height: 100vh; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+.sidebar .nav-link, 
+.sidebar .list-aside {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

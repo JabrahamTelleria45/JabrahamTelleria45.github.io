@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LLP - Ejercicio de Matriz</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/495fca6823.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP">
+            </div>
+            <button class="menu-burg" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="enlaces">
+                <li><a class="boton" href="/index.html">Inicio</a></li>
+                <li><a class="boton clase" href="/assets/views/Algoritmos.html">Clases</a></li>
+                <li><a class="boton" href="/assets/views/Ejercicios.html">Ejercicios</a></li>
+                <li><a class="boton" href="/assets/views/Contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="contenedor-textos contenedor">
+                <h1 class="introV1">Ejercicio con Matriz</h1>
+                <p>En esta clase, haremos un ejercicio con matrices bastante sencillo.</p>
+            </div>
+            <img class="imgIndex" src="/assets/img/FoxImage.png" alt="Algoritmo">
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fas fa-bars"></i> Menú
+            </button>
+
+            <aside id="sidebar" class="col-md-2 sidebar collapse d-md-block">
+                <h5>Lista de clases</h5>
+                <nav class="nav flex-column nav-pills">
+                    <a class="nav-link" href="#">Fundamentos Lógicos</a>
+                    <ul>
+                        <li><a class="list-aside" href="Clase1.html">Introducción a Flowgorithm</a></li>
+                        <li><a class="list-aside" href="Algoritmos.html">Algoritmos</a></li>
+                        <li><a class="list-aside" href="Variables.html">Variables</a></li>
+                        <li><a class="list-aside" href="VariablesEnteras.html">Variables Enteras</a></li>
+                        <li><a class="list-aside" href="VariablesReales.html">Variables Reales</a></li>
+                        <li><a class="list-aside" href="VariablesString.html">Variables String</a></li>
+                        <li><a class="list-aside" href="EjercicioAlgoritmo.html">Mejorando Nuestro ejercicio Algoritmos</a></li>
+                        <li><a class="list-aside" href="OperadoresLogicos.html">Operadores Lógicos</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Estructuras de control</a>
+                    <ul>
+                        <li><a class="list-aside" href="CondicionalSi.html">Condicional "Si"</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Bucles</a>
+                    <ul>
+                        <li><a class="list-aside bucle" href="BucleWhile.html">Bucle While</a></li>
+                        <li><a class="list-aside bucle" href="BucleDo.html">Bucle Do</a></li>
+                        <li><a class="list-aside bucle" href="BucleFor.html">Bucle For</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Matrices</a>
+                    <ul>
+                        <li><a class="list-aside matriz" href="Matrices.html">Introducción a Matrices</a></li>
+                        <li><a class="list-aside matriz" href="EjercicioMatrices.html">Ejercicio Matrices</a></li>
+                    </ul>
+                    <a class="nav-link" href="#">Algoritmos y soluciones de problemas</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-10 main-content">
+                <div class="section-header">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-link active">
+                           <p class="pHeaderV">Matrices</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejemplos</p>
+                        </li>
+                        <li class="nav-link active">
+                            <p class="pHeaderV">Ejercicios</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Ejercicio: Almacenar y Mostrar los Primeros Números Pares</h3>
+                    <p>En este ejercicio, aprenderás a almacenar y mostrar los primeros 5 números pares utilizando una matriz en Flowgorithm. Sigue los pasos a continuación para completar el ejercicio:</p>
+                    <ol>
+                        <li><strong>Crear un Nuevo Diagrama:</strong> Crea un nuevo diagrama de flujo.</li>
+                        <li><strong>Declarar la Matriz:</strong> Declara una matriz llamada <code>numeros</code> de tamaño 5 para almacenar los números pares. La declaración debe ser algo así: <code>Entero numeros[5]</code>.</li>
+                        <img class="img-fluid" src="/assets/img/procesoEjercicioMatriz.png" alt="">
+                        <li>Declaramos una variable llamada contador y le asignamos el valor de 0 y una llamada <code>I</code> con la que ejecutaremos el bucle</li>
+
+                        <li><strong>Inicializar la Matriz:</strong> Utiliza un bucle <code>For</code> para asignar los primeros 5 números pares a la matriz. Por ejemplo:
+                            <pre><code>
+                Para i = 0 Hasta 4 Hacer
+                    numeros[i] = 
+                    contador = contador + 2
+                Fin Para
+                            </code></pre>
+                            Declararemos el for de esta forma:
+                        </li> 
+                        <img class="img-fluid" src="/assets/img/procesoEjercicioMatrizFor.png" alt="">
+                        <p>y dentro del for agregaremos lo siguiente: </p>
+                        <img class="img-fluid" src="/assets/img/ejercicioMatrizForCont.png" alt="">
+                        <p>Ahi le estamos diciendo: como el i dentro del bucle for aumenta de 0 a 4, el valor de i va aumentando por lo tanto mientras se ejecuta recorre cada elemento de la matriz
+                            y con <code>contador = contador + 2</code> como le dijimos a numeros <code>numeros[i] = contador</code> entonces el contador aumentara 2 en 2 y sus diferentes valores se van a almacenar segun el campo que vaya en [i]
+                        </p>
+                        <li><strong>Mostrar la Matriz:</strong> Usa otro bucle <code>For</code> para imprimir los valores almacenados en la matriz. El código podría ser:
+                            <pre><code>
+                Para i = 0 Hasta 4 Hacer
+                    Escribir numerosPares[i]
+                Fin Para
+                            </code></pre>
+                        </li>
+                        <img class="img-fluid" src="/assets/img/ejercicioMatrizFinal.png" alt="">
+                        <li><strong>Ejecutar el Algoritmo:</strong> Ejecuta el diagrama de flujo para verificar que los números pares se almacenen y se muestren correctamente.</li>
+                    </ol>
+                    <p>Al completar este ejercicio, habrás aprendido cómo utilizar matrices para almacenar y procesar una secuencia de números en Flowgorithm.</p>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <a href="/assets/views/Matrices.html" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left"></i> Clase Anterior
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/assets/img/logo2.png" alt="Logotipo LLP" class="img-fluidF" style="height: 80px;">
+            </div>
+            <div>
+                <p class="mb-0">&copy; 2024 LLP - Aprende la Lógica de la Programación con Flowgorithm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

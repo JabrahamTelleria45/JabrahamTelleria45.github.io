@@ -1,0 +1,28 @@
+@media (max-width: 480px) {
+    .intro {
+        display: block;
+        height: 100%;
+    }
+}
+
+/* Pantallas pequeñas (móviles en modo paisaje y algunas tabletas) */
+@media (max-width: 767px) {
+    .intro {
+        display: block;
+        height: 100%;
+    }
+}
+
+/* Pantallas medianas (tabletas y algunas pantallas de computadora) */
+@media (min-width: 768px) {
+    .intro {
+        height: 100%;
+    }
+}
+
+/* Pantallas grandes (escritorios y pantallas grandes) */
+@media (min-width: 1200px) {
+    .intro {
+        height: 70%;
+    }
+}
